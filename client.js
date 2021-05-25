@@ -68,7 +68,7 @@ const _request = (pathOrUrl, opt, ctx, cb) => {
 		})
 
 		// send request
-		socket.end(pathOrUrl + '\r\n')
+		socket.write(pathOrUrl + '\r\n')
 	})
 }
 
